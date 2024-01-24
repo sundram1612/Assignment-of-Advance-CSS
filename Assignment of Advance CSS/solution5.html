@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image zoomed slowly</title>
+    <style>
+        div{
+            width: 900px;
+            height: 550px;
+            border: 3px solid black;
+            margin: 10px auto;
+            filter: blur(15px);
+            transition: all 0.4s ease-in-out;
+        }
+        img {
+            width: 900px;
+            height: 550px;
+            
+        }
+        h1 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+        div:hover {
+          filter: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover to Reveal the Image</h1>
+    <div>
+        <img src="Assets/monument_along_roadsideusingai..jpg" />
+    </div>
+</body>
+</html>

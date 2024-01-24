@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementing Grayscale</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            margin: 10px auto;
+            transition: all 0.5s ease-in-out;
+           
+        }
+        h1 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            text-decoration: underline 3px;
+
+        }
+        img {
+            width: 500px;
+            height: 500px;
+            border-radius: 15px;
+        }
+        div:hover {
+            filter: grayscale(90%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover To Have A GrayScale Look.</h1>
+    <div>
+        <img src="Assets/Bill-Gates.jpg" alt="Bill-GatesImage">
+    </div>
+</body>
+</html>

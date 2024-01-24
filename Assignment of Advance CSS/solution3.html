@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Sticky Note</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .container {
+            border: 2px solid #000000;
+            max-width: 330px;
+            background: linear-gradient(to left, #3e3ed8, #71ccf0);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 220px auto;
+            transition: 1s ease-in-out;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        button {
+            width: 310px;
+            height: 40px;
+            margin-top: 15px;            
+            margin: 15px 10px 10px 10px;
+
+            background: linear-gradient(to left, rgb(41, 223, 53), rgb(103, 229, 212));
+            border: 0;
+            border-radius: 5px;
+            font-weight: 750;
+            font-size: 16px;
+        }  
+        p{
+            color: #f0f8ff;
+        } 
+        .imp_dates {
+            margin-left: 25px;
+        }
+        h2 {
+            margin-left: 16px;    
+        }
+        li {
+            font-size: 16px;
+        }
+        .container:hover {
+            transform: rotate(-90deg);
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+        <div class="header">
+            <h1>#01</h1>
+            <p>Created On : 01/01/2023</p>
+        </div>
+
+        <h2>Important dates</h2>
+    
+        <div class="imp_dates">
+            <ul>
+                <li>January 26 - Republic Day</li>
+                <li>August 15 - Independence Day</li>
+                <li>October 2 - Gandhi Jayanti</li>
+                <li>August 29 - National Sports Day</li>
+            </ul>
+        </div>
+        <button>Mark As Done</button>
+   </div>
+</body>
+</html>
